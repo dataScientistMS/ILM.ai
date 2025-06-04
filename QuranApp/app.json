@@ -1,0 +1,89 @@
+{
+  "expo": {
+    "name": "ILM.ai",
+    "slug": "ILM.ai-slug",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "plugins": [
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.985762750874-f9uq014laj5ji965df90acj0053skoq6"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow ILM.ai to use your location."
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/SF-Arabic.ttf"]
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Allow ILM.ai to access your device motion"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow ILM.ai to access your photos.",
+          "savePhotosPermission": "Allow ILM.ai to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "deploymentTarget": "15.1",
+      "usesAppleSignIn": true,
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ai.ILM",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.985762750874-f9uq014laj5ji965df90acj0053skoq6"
+            ]
+          }
+        ],
+        "NSLocationWhenInUseUsageDescription": "This app requires access to your location to provide prayer times based on your current location.",
+        "NSLocationAlwaysUsageDescription": "This app requires constant access to your location to provide accurate prayer times.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        },
+        "NSPhotoLibraryUsageDescription": "Cette application a besoin d’accéder à la photothèque pour enregistrer des images."
+      },
+      "swift": true
+    },
+    "android": {
+      "package": "com.yourcompany.yourapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f9dd11e5-5c78-46e6-8d78-2c9f4b3d4653"
+      }
+    }
+  }
+}
