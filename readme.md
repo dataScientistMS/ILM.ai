@@ -73,12 +73,12 @@ Sensitive data like API keys, database credentials, and OAuth secrets are manage
 
 ## Some screen
 
-![Home screen](./screenshots/home.png)
-![Test flight](./screenshots/testflight.png)
-![Chat](./screenshots/question.png)
+![Home screen](./screenshots/home.PNG)
+![Test flight](./screenshots/testflight.PNG)
+![Chat](./screenshots/question.PNG)
 ![Logo](./screenshots/logo.jpg)
-![Daily verse](./screenshots/dailyverses.png)
-![Research function](./screenshots/research.png)
+![Daily verse](./screenshots/dailyverses.PNG)
+![Research function](./screenshots/research.PNG)
 
 
 
